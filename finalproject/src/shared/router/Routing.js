@@ -25,16 +25,22 @@ import LandingPage from "../../components/LandingPage/LandingPage";
 import AdminComp from "../../components/AdminComp";
 import ProtectedRouting from "./protectedRouting";
 const router = createBrowserRouter([
-//     { path: "", element: <LoginComp /> },
-//   { path: "login", element: <LoginComp /> },
+    // { path: "", element: <LoginComp /> },
+  { path: "login", element: <LoginComp /> },
 
 
 
   // {path:"addCar",element:<ProtectedRouting Component={AddCarComp}></ProtectedRouting>},
   // {path:"updateCar/:id",element:<ProtectedRouting Component={UpdateCarComp}></ProtectedRouting>},
   {path:"adminDashboard",element:<ProtectedRouting Component={AdminDashboardComp}></ProtectedRouting>,children:[
-    // {path:"addCar",element:<AddCarComp></AddCarComp>},
-    // {path:"updateCar/:id",element:<UpdateCarComp></UpdateCarComp>},
+    {path:"addCar",element:<AddCarComp></AddCarComp>},
+    {path:"updateCar/:id",element:<UpdateCarComp></UpdateCarComp>},
+]},
+  
+  {path:"adminDashboard",element:<ProtectedRouting Component={AdminDashboardComp}></ProtectedRouting>,children:[
+    {path:"addCar",element:<AddCarComp></AddCarComp>},
+  {path:"updateCar/:id",element:<UpdateCarComp></UpdateCarComp>},
+
   ]},
  {path:"addCar",element:<AddCarComp></AddCarComp>},
  {path:"adminDashboard",element:<AdminDashboardComp></AdminDashboardComp>},
@@ -47,6 +53,9 @@ const router = createBrowserRouter([
     {path:"signup",element:<Signup/>},
     {path:"adminLogin",element:<AdminComp></AdminComp>},  
     {path:"forgot",element:<ForgotPassComp/> },
+
+
+  // {path:"MainDashbord",element:<ProtectedRouting Component={UserDashbord}></ProtectedRouting>,children: [
   {path:"MainDashbord",element:<ProtectedRouting Component={UserDashbord}></ProtectedRouting>,children: [
     {path:"userinfo",element:<Userinfo></Userinfo>},
     {path:"luxories",element:<Luxurious></Luxurious>},

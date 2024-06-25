@@ -87,9 +87,14 @@
       "drivingtype": "automatic",
       "type": "luxurious",
       "count": 1,
+<<<<<<< Updated upstream
       "status": "Booked",
+=======
+      "status": "Not-Booked",
+>>>>>>> Stashed changes
       "id": "8eaa",
-      "user": "basil123@gmail.com"
+      "user": "basil123@gmail.com",
+      "bookingstatus": true
     },
     {
       "carid": 2,
@@ -103,10 +108,26 @@
       "count": 1,
       "status": "Booked",
       "id": "6bde",
-      "user": "basil123@gmail.com"
+      "user": "basil123@gmail.com",
+      "bookingstatus": true
     },
     {
-      "carid": 3,
+      "carid": 7,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 0,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 4,
       "carname": "Volvo XC90",
       "price": "$30/hr",
       "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
@@ -117,10 +138,161 @@
       "count": 1,
       "status": "Booked",
       "id": "e7eb",
-      "user": "basil123@gmail.com"
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 5,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 0,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
     },
     {
       "carid": 6,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 0,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 7,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 0,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 8,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 0,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 9,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 1,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 10,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 0,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 11,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 1,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 12,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 1,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 13,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 1,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 14,
+      "carname": "Volvo XC90",
+      "price": "$30/hr",
+      "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/XC-90/10588/1689924353443/front-left-side-47.jpg?imwidth=420&impolicy=resize",
+      "carrank": 9,
+      "carmodel": 2023,
+      "drivingtype": "automatic",
+      "type": "luxurious",
+      "count": 1,
+      "status": "Booked",
+      "id": "e7eb",
+      "user": "",
+      "bookingstatus": true
+    },
+    {
+      "carid": 15,
       "carname": "Porsche 911",
       "price": "300",
       "carimage": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Porsche/911/11757/1717680690776/front-left-side-47.jpg?imwidth=420&impolicy=resize",
@@ -129,8 +301,15 @@
       "drivingtype": "automatic",
       "type": "suplux",
       "count": 0,
+<<<<<<< Updated upstream
       "status": "NotBooked",
       "id": "61c9"
+=======
+      "status": "Booked",
+      "id": "61c9",
+      "user": "",
+      "bookingstatus": false
+>>>>>>> Stashed changes
     },
     {
       "id": "4cff",
@@ -141,6 +320,7 @@
       "carmodel": "2025",
       "carimage": "nil",
       "type": "normal",
+<<<<<<< Updated upstream
       "status": "Booked"
     },
     {
@@ -153,6 +333,11 @@
       "carimage": "https://i.pinimg.com/originals/07/8c/71/078c71955fe352c544e395fbafddf82c.jpg",
       "type": "sports",
       "status": "Not-Booked"
+=======
+      "status": "Not-Booked",
+      "user": "",
+      "bookingstatus": false
+>>>>>>> Stashed changes
     }
   ],
   "contact": [
@@ -216,7 +401,7 @@
   ],
   "admin": [
     {
-      "id": 1,
+      "id": "1",
       "adminname": "VICTOR",
       "adminemail": "victor@gmail.com",
       "adminpassword": "victor123"
