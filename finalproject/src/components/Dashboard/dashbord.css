@@ -25,7 +25,12 @@ input{
     transition: transform 3s;   
     background-color: gray !important;
 }
-
+img{
+  width:100px;
+  height:70px;
+  border:none;
+  border-radius:25%;
+}
 #hovers:hover{
     
     transform: scale(1.05);

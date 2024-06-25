@@ -6,9 +6,10 @@ const ProtectedRouting = ({Component}) => {
     const nav = useNavigate();
     useEffect(()=>{
         if(!sessionStorage.getItem("user")){
-           nav("/login");
+           nav("/");
         }
     },[])
+   
    
    
     return (

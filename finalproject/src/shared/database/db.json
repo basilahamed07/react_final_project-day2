@@ -87,7 +87,7 @@
       "drivingtype": "automatic",
       "type": "luxurious",
       "count": 1,
-      "status": "NotBooked",
+      "status": "Booked",
       "id": "8eaa",
       "user": "basil123@gmail.com"
     },
@@ -129,7 +129,7 @@
       "drivingtype": "automatic",
       "type": "suplux",
       "count": 0,
-      "status": "Booked",
+      "status": "NotBooked",
       "id": "61c9"
     },
     {
@@ -141,6 +141,17 @@
       "carmodel": "2025",
       "carimage": "nil",
       "type": "normal",
+      "status": "Booked"
+    },
+    {
+      "id": "1620",
+      "carname": "THAR",
+      "price": "$300#",
+      "drivingtype": "manual",
+      "carrank": "1",
+      "carmodel": "2025",
+      "carimage": "https://i.pinimg.com/originals/07/8c/71/078c71955fe352c544e395fbafddf82c.jpg",
+      "type": "sports",
       "status": "Not-Booked"
     }
   ],

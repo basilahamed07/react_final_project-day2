@@ -56,12 +56,12 @@ const AddCarComp = () => {
            <select className="form-control" name="type" onChange={inputChangeHandler} value={itemData.type} required>
                <option value="">Select car type</option>
                <option value="luxurious">Luxurious</option>
-               <option value="normal">Delux</option>
-               <option value="normal">SuperLuxurious</option>
-               <option value="normal"></option>
+               <option value="sports">Sports</option>
+               <option value="suplux">SuperLuxurious</option>
+               <option value="delux">Delux</option>
            </select>
            <label for="status">Car Image</label>
-           <input type="text" className="form-control" name="carimage" onChange={inputChangeHandler} value={itemData.carimage} placeholder="Car Image" required/>
+           <input type="text"  className="form-control image" name="carimage" onChange={inputChangeHandler} value={itemData.carimage} placeholder="Car Image" required/>
            
            <label for="status">Car Status</label>
            <select className="form-control" name="status" onChange={inputChangeHandler} value={itemData.status} required>

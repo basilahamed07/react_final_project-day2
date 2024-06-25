@@ -77,7 +77,7 @@ fetchData();
                             <td>{val.drivingtype}</td>
                             <td>{val.carrank}</td>
                             <td>{val.carmodel}</td>
-                            <td><img src={val.carimage} alt="" /></td>
+                            <td><img src={val.carimage} alt="Loading" /></td>
                             <td>
                 <button type="button" className={`btn ${val.status === 'Booked' ? 'btn-outline-success' : 'btn-outline-danger'}`} onClick={() => toggleStatus(val)}>
                   {val.status}

@@ -39,7 +39,7 @@ const AdminComp = () => {
         sessionStorage.setItem("admin",email)
        }
        else{  
-        window.alert("admin email or password is wrong");
+        window.alert("admin credentials is wrong!!");
         email="";
         password="";
        }
