@@ -87,7 +87,7 @@
       "drivingtype": "automatic",
       "type": "luxurious",
       "count": 1,
-      "status": "Not-Booked",
+      "status": "NotBooked",
       "id": "8eaa",
       "user": "basil123@gmail.com"
     },

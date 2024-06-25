@@ -35,7 +35,7 @@ fetchData();
     }
     const toggleStatus = (car) => {
       
-      const newStatus = car.status === 'NotBooked' ? 'Booked' : 'Booked';
+      const newStatus = car.status === 'NotBooked' ? 'Booked' : 'NotBooked';
         axios.put(`http://localhost:8888/car/${car.id}`, { ...car, status: newStatus })
         .then(() => {
           setItemData(itemData.map(item => item.id === car.id ? { ...item, status: newStatus } : item));
@@ -79,7 +79,7 @@ fetchData();
                             <td>{val.carmodel}</td>
                             <td><img src={val.carimage} alt="" /></td>
                             <td>
-                <button type="button" className={`btn ${val.status === 'Booked' ? 'btn-success' : 'btn-info'}`} onClick={() => toggleStatus(val)}>
+                <button type="button" className={`btn ${val.status === 'Booked' ? 'btn-outline-success' : 'btn-outline-danger'}`} onClick={() => toggleStatus(val)}>
                   {val.status}
                 </button>
               </td>

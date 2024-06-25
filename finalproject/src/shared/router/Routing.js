@@ -32,11 +32,14 @@ const router = createBrowserRouter([
 
   {path:"addCar",element:<ProtectedRouting Component={AddCarComp}></ProtectedRouting>},
   {path:"updateCar/:id",element:<ProtectedRouting Component={UpdateCarComp}></ProtectedRouting>},
-  {path:"adminDashboard",element:<ProtectedRouting Component={AdminDashboardComp}></ProtectedRouting>},
+  {path:"adminDashboard",element:<ProtectedRouting Component={AdminDashboardComp}></ProtectedRouting>,children:[
+    // {path:"addCar",element:<AddCarComp></AddCarComp>},
+    // {path:"updateCar/:id",element:<UpdateCarComp></UpdateCarComp>},
+  ]},
  
 
 
-{path:"",element:<LandingPage/>},
+// {path:"",element:<LandingPage/>},
   {path:"",element:<LandingPage/>},
   {path:"login",element:<LoginComp/>},
     {path:"signup",element:<Signup/>},

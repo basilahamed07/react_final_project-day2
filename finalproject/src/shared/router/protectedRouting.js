@@ -9,11 +9,7 @@ const ProtectedRouting = ({Component}) => {
            nav("/login");
         }
     },[])
-    useEffect(()=>{
-        if(!sessionStorage.getItem("admin")){
-           nav("/adminlogin");
-        }
-    },[])
+   
    
     return (
         <div>
