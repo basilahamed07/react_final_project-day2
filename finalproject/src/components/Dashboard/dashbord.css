@@ -1,6 +1,9 @@
 @font-face {
     font-family: rent-car;
-    src: url(../../resources/bruce-forever-font/Al_Veshion_PersonalUseOnly.otf);
+    /* src: url(../../resources/bruce-forever-font/Al_Veshion_PersonalUseOnly.otf); */
+    src: url(../../resources/bruce-forever-font/Handfine.ttf);
+    src: url(../../resources/bruce-forever-font/Longline\ Regular\ Demo.ttf);
+    src: url(../../resources/bruce-forever-font/Carlo.ttf)
 }
 
 *{
@@ -29,9 +32,6 @@ input{
     box-shadow: 1px 1px 30px 	#FFD700;
 }
 
-td, th{
-    color: #FFD700 !important;
-}
 
 #buttonss:hover{
     background-color: #FFD700 !important;
@@ -118,7 +118,7 @@ td, th{
   margin: 10px;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 5px;
-  color: #FFD700 !important;
+
 }
 
 #button-29:hover{
@@ -130,4 +130,27 @@ td, th{
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  /* background: linear-gradient(120deg, #0f0f0f, #666464); */
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: linear-gradient(120deg, #000000, #333333); */
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
 }

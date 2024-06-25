@@ -4,16 +4,16 @@ import React, { useEffect, useState } from 'react'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import AddIcon from '@mui/icons-material/Add';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
 
 
 
 const CarDetails = (car) => {
 
-
+    const {carid}= useParams();
     const [users,setUsers] =useState([]);
-    // const[Luxurious,setlux] = useState([])
+    const[itemData,setItemData] = useState([])
     const [clicking,setclikcing] = useState(0);
 
 
@@ -41,30 +41,56 @@ const CarDetails = (car) => {
     }
   };
 
-  const handleAddOne = async (carid) => {
-    const updatecount = 1;
+//   const toggleStatus = (car) => {
+      
+//     const newStatus = car.status === 'NotBooked' ? 'Booked' : 'Booked';
+//       axios.put(`http://localhost:8888/car/${car.id}`, { ...car, status: newStatus })
+//       .then(() => {
+//         setItemData(itemData.map(item => item.id === car.id ? { ...item, status: newStatus } : item));
+//       })
+//       .catch((error) => {
+//         console.error('There was an error updating the status!', error);
+//       });
+   
+// };
+
   
-    try {
-      const response = await axios.put(`http://localhost:8888/car/${carid}`, { count: updatecount });
-      console.log("Status updated successfully");
-      window.alert(`Status updated successfully for car ${carid}`);
-      // Optionally update local state or UI to reflect the change
-    } catch (error) {
-      console.error('Error updating status:', error);
-      // Handle specific error cases if needed
-      if (error.response && error.response.status === 404) {
-        window.alert(`Car with id ${carid} not found.`);
-      } else {
-        window.alert('Failed to update status. Please try again later.');
-      }
-    }
-    //to display the car items in it
-    const updatedCars = cars.map(car => {
-      if (car.carid === carid) {
-        return { ...car, count: 1 }; // Set count to 1 for the clicked car
-      }
-      return car;
-    });
+  const handleAddOne =  (car) => {
+    const newStatus = sessionStorage.getItem("user")
+    const newcount = 1
+      axios.put(`http://localhost:8888/car/${car.id}`, { ...car, user: newStatus })
+      axios.put(`http://localhost:8888/car/${car.id}`, { ...car, count: newcount })
+      .then(() => {
+        setItemData(itemData.map(item => item.id === car.id ? { ...item, user: newStatus } : item));
+      })
+      .catch((error) => {
+        console.error('There was an error updating the status!', error);
+      });
+      const updatedCars = cars.map(car => {
+        if (car.carid === carid) {
+          return { ...car, count: 1 }; // Set count to 1 for the clicked car
+        }
+        return car;
+      });
+   
+    // const updatecount = 1;
+  
+    // try {
+    //   const response =  axios.put(`http://localhost:8888/car/${carid}`, { count: updatecount });
+    //   console.log("Status updated successfully");
+    //   window.alert(`Status updated successfully for car ${carid}`);
+    //   // Optionally update local state or UI to reflect the change
+    // } catch (error) {
+    //   console.error('Error updating status:', error);
+    //   // Handle specific error cases if needed
+    //   if (error.response && error.response.status === 404) {
+    //     window.alert(`Car with id ${carid} not found.`);
+    //   } else {
+    //     window.alert('Failed to update status. Please try again later.');
+    //   }
+    // }
+    // to display the car items in it
+    
 
       
 
@@ -164,7 +190,7 @@ const CarDetails = (car) => {
                 <h5 className="card-title">{val.carname}</h5>
                 <p className="card-text">CarRank: <strong> {val.carrank} </strong> type: <strong> {val.drivingtype} </strong>model : <strong> {val.carmodel}</strong></p>
                 <p style={{alignItems:"right"}} className='float-right'>addning car:<strong> {val.count} </strong></p>
-                <button key={users.id} onClick={() => handleAddOne(val.carid)} className="btn btn-primary float-left">{val.price} Only/-  </button> 
+                <button key={users.id} onClick={() => handleAddOne(val)} className="btn btn-primary float-left">{val.price} Only/-  </button> 
               </div>  
               
             </div>
@@ -176,5 +202,5 @@ const CarDetails = (car) => {
         </>
         
 
-}
+        }
 export default CarDetails

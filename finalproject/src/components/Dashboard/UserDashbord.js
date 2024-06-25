@@ -36,16 +36,17 @@ const nav = useNavigate();
       }).catch((error)=>{})
   }
     {
-      return <div class="container">{
-
+      return <div class="container mt-5">
+        <h1 style={{display:"inline"}}>Welcome you : &nbsp;</h1>
+        {
         itemData.map((val, index) => (
-          <h1 className='mt-5'>{val.username}  </h1>))
+          <b><h1 style={{display:"inline"}} className='mt-2'>{val.username}  </h1> </b>))
       }
       <div style={{position:"absolute",top:"20px",right:"30px"}}>
       <Button variant='contained' onClick={()=>logout()} className='mt-4' style={{background:"yellow",color:"black"}} >Logout</Button>
       </div>
       <nav class="navbars  mt-5">
-        <div class="container-fluid " >
+        <div>
          <Link to="luxories"><button className='btn ' id='button-29'> <a class="navbar-brand text-dark " href="#">Luxurious Car</a></button></Link> 
          <Link to="Sports"> <button className='btn btn-warning' id='button-29'> <a class="navbar-brand text-dark" href="#">Sports Car</a></button></Link>
          <Link to="delux">  <button className='btn btn-warning ' id='button-29'> <a class="navbar-brand text-dark" href="#">delux Car</a></button></Link>

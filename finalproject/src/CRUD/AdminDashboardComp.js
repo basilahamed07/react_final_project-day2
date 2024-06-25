@@ -36,7 +36,6 @@ fetchData();
     const toggleStatus = (car) => {
       
       const newStatus = car.status === 'NotBooked' ? 'Booked' : 'Booked';
-      if(!newStatus){
         axios.put(`http://localhost:8888/car/${car.id}`, { ...car, status: newStatus })
         .then(() => {
           setItemData(itemData.map(item => item.id === car.id ? { ...item, status: newStatus } : item));
@@ -44,10 +43,7 @@ fetchData();
         .catch((error) => {
           console.error('There was an error updating the status!', error);
         });
-      }else{
-        window.alert("Want to Cancel The Booking??");
-       
-    };
+     
   };
     return (
         <div className='container-fluid mt-4 mb-4 '>

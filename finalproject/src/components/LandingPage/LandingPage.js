@@ -143,8 +143,8 @@ const Contact = () => (
 const LandingPage = () => {
 
     const nav = useNavigate();
-   const redirect = ()=>{
-    nav('/dash/signup');
+   const admin = ()=>{
+    nav('/adminlogin');
    };
    const reloadss = ()=>{
     nav('login');
@@ -200,6 +200,9 @@ const LandingPage = () => {
             <MenuIcon />
           </IconButton>
         )}
+         <Button className="rent-car" onClick={()=>admin()} color="warning" variant="contained">
+          <i className="fas fa-car"></i> Admin Login
+        </Button> &nbsp; &nbsp; &nbsp;
         <Button className="rent-car" onClick={()=>reloadss()} color="warning" variant="contained">
           <i className="fas fa-car"></i> Rent a Car
         </Button>

@@ -11,20 +11,20 @@ const txt1Obj ={
 
 const Dashboards = () => {
     return (
-        <div className="mt-2" style={{txt1Obj}} >
-        {/* <h2>This is MainDashboardComp Component</h2>   */}
-        <div className='container-fluid  ' style={{txt1Obj}}>
-          <div className='container-fluid' > 
-            <NavComp></NavComp>
-          </div>
-          <div className='container-fluid bg-dark' > 
-          </div>
+        // <div className="mt-2" style={{txt1Obj}} >
+        // <h2>This is MainDashboardComp Component</h2>  
+        // <div className='container-fluid  ' style={{txt1Obj}}>
+        //   <div className='container-fluid' > 
+        //     <NavComp></NavComp>
+        //   </div>
+        //   <div className='container-fluid bg-dark' > 
+        //   </div>
           <Outlet></Outlet>
-          <div className='card-footer border-primary'> 
-           <FooterComp></FooterComp>
-          </div>
-        </div>
-      </div>
+      //     <div className='card-footer border-primary'> 
+      //      <FooterComp></FooterComp>
+      //     </div>
+      //   </div>
+      // </div>
     )
 }
 

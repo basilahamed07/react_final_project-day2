@@ -22,6 +22,7 @@ import UpdateCarComp from "../../CRUD/UpdateCarComp";
 import AdminDashboardComp from "../../CRUD/AdminDashboardComp";
 import PageNotFound from "../../components/PageNotFound";
 import LandingPage from "../../components/LandingPage/LandingPage";
+import AdminComp from "../../components/AdminComp";
 const router = createBrowserRouter([
 //     { path: "", element: <LoginComp /> },
 //   { path: "login", element: <LoginComp /> },
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
   {path:"",element:<LandingPage/>},
   {path:"login",element:<LoginComp/>},
     {path:"signup",element:<Signup/>},
+    {path:"adminLogin",element:<AdminComp></AdminComp>},  
     {path:"forgot",element:<ForgotPassComp/> },
   {path:"MainDashbord",element:<UserDashbord/>,children: [
     {path:"userinfo",element:<Userinfo></Userinfo>},

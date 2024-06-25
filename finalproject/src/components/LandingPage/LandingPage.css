@@ -2,14 +2,14 @@ General styles
 * {
   /* color: #fff; */
 }
-body, html {
+/* body, html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(120deg, #0f0f0f, #666464);
   color: #fff;
   scroll-behavior: smooth;
-}
+} */
 
 .landing-page {
   text-align: center;
@@ -152,9 +152,10 @@ body, html {
   width: 250px;
   height: 200px;
   margin: 15px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: transform 2s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+
 }
 
 .car-item:hover {
