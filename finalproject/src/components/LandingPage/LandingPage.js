@@ -6,6 +6,7 @@ import Carousel from 'react-material-ui-carousel';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './LandingPage.css';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import logo from './images/logo.jpg';
 import car1 from './images/car1.jpg';
@@ -201,7 +202,7 @@ const LandingPage = () => {
           </IconButton>
         )}
          <Button className="rent-car" onClick={()=>admin()} color="warning" variant="contained">
-          <i className="fas fa-car"></i> Admin Login
+         <i className="fas fa-user-circle"></i> Admin Login
         </Button> &nbsp; &nbsp; &nbsp;
         <Button className="rent-car" onClick={()=>reloadss()} color="warning" variant="contained">
           <i className="fas fa-car"></i> Rent a Car

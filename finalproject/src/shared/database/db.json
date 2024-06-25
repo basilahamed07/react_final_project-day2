@@ -206,9 +206,9 @@
   "admin": [
     {
       "id": 1,
-      "adminnamw": "temp  user",
-      "adminemail": "temp@gmail.com",
-      "adminpassword": "temp12345"
+      "adminname": "VICTOR",
+      "adminemail": "victor@gmail.com",
+      "adminpassword": "victor123"
     }
   ]
 }

@@ -23,16 +23,17 @@ import AdminDashboardComp from "../../CRUD/AdminDashboardComp";
 import PageNotFound from "../../components/PageNotFound";
 import LandingPage from "../../components/LandingPage/LandingPage";
 import AdminComp from "../../components/AdminComp";
+import ProtectedRouting from "./protectedRouting";
 const router = createBrowserRouter([
 //     { path: "", element: <LoginComp /> },
 //   { path: "login", element: <LoginComp /> },
 
 
 
-  {path:"addCar",element:<AddCarComp></AddCarComp>},
-  {path:"updateCar/:id",element:<UpdateCarComp></UpdateCarComp>},
-  {path:"adminDashboard",element:<AdminDashboardComp></AdminDashboardComp>},
-  {path:"addCar",element:<AddCarComp></AddCarComp>},
+  {path:"addCar",element:<ProtectedRouting Component={AddCarComp}></ProtectedRouting>},
+  {path:"updateCar/:id",element:<ProtectedRouting Component={UpdateCarComp}></ProtectedRouting>},
+  {path:"adminDashboard",element:<ProtectedRouting Component={AdminDashboardComp}></ProtectedRouting>},
+ 
 
 
 {path:"",element:<LandingPage/>},
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
     {path:"signup",element:<Signup/>},
     {path:"adminLogin",element:<AdminComp></AdminComp>},  
     {path:"forgot",element:<ForgotPassComp/> },
-  {path:"MainDashbord",element:<UserDashbord/>,children: [
+  {path:"MainDashbord",element:<ProtectedRouting Component={UserDashbord}></ProtectedRouting>,children: [
     {path:"userinfo",element:<Userinfo></Userinfo>},
     {path:"luxories",element:<Luxurious></Luxurious>},
     {path:"Sports",element:<Sports></Sports>},

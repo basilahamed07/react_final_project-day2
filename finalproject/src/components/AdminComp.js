@@ -35,11 +35,11 @@ const AdminComp = () => {
         let usersData=res.data;
        const data =usersData.filter((val)=>{return val.adminemail===email && val.adminpassword===password});
        if(data.length>0){
-        nav("/MainDashbord");
-        sessionStorage.setItem("user",email)
+        nav("/adminDashboard");
+        sessionStorage.setItem("admin",email)
        }
        else{  
-        window.alert("admineamil or password is wrong");
+        window.alert("admin email or password is wrong");
         email="";
         password="";
        }
